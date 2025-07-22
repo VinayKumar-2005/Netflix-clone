@@ -1,0 +1,423 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: black;
+    font-family: Arial;
+}
+
+.mainnetflixcontainer{
+
+    position: relative;
+}
+
+.backgroundcontainer{
+    background-image: url("./background.jpg");
+    filter: blur(16px);
+    height: 100vh;
+    position: relative;
+}
+
+.pinkoverlay{
+    background-color: rgba(104,3,20,0.404);
+    height: 100%;
+    width: 100%;
+}
+
+.contentcontainer{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0rem 2rem;
+}
+
+nav{
+    height: 20vh;
+}
+
+.uppernavbarsection{
+    display: flex;
+    height: 50%;
+}
+
+.uppernavbarleftsection{
+    width: 50%;
+}
+
+.uppernavbarrightsection{
+    width: 50%;
+}
+
+.netflixlogo{
+    width: 30%;
+}
+
+.languagebutton{
+    display: flex;
+    padding: 0.4rem 0.8rem;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+}
+
+.navbarbuttoncontainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.signinbutton{
+    background-color: #fff;
+    padding:0.4rem 0.8rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+}
+
+.languagebutton p{
+        margin-left: 5px;
+}
+
+.lowernavbarsection{
+    height: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.menulist{
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 7px 14px black;
+    height: 7vh;
+}
+
+.menulist li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bannersection{
+    height: 90vh;
+    background-image: url("./background.jpg");
+    background-size: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7),black);
+}
+
+.bannercontainer{
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannercontainer h2{
+    font-size: 4rem;
+    width: 50%;
+    text-align: center;
+    font-family: Arial;
+}
+
+.bannercontainer h4{
+    font-size: 1.3rem;
+    font-family: Arial;
+    margin: 20px;
+}
+
+.bannercontainer p{
+    font-size: 0.9rem;
+    font-family: Arial;
+    margin: 12px;
+}
+
+.inputcontainer{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.emailinputbox{
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 1px solid white;
+    outline: none;
+    width: 63%;
+    background-color: rgba(255,255,255,0.3);
+    color: white;
+    font-size: 1rem;
+}
+
+.emailinputbox::placeholder{
+    color: white;
+}
+
+.getstartedbutton{
+    width: 30%;
+    background-color: red;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.getstartedbutton:hover{
+    background-color: #a40610;
+}
+
+.carouselSection, 
+.planSection,
+.reasonToJoinSection,
+.faqSection,
+.getStartedSection{
+    color: white;
+    
+}
+
+.carouselSection h2,
+.planSection h2,
+.reasonToJoinSection h2,
+.faqSection h2{
+    margin-left: 5rem;
+    font-size: 2 rem;
+} 
+
+.carouselCardConatiner,
+.plansConatiner,
+.reasonsConatiner,
+.faqCardsContainer{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+}
+
+
+.carouselCard {
+    width: 13%;
+    height: 38vh;
+    border-radius: 20px;
+    position: relative;
+    transition: transform 0.4s ease-in-out;
+}
+
+
+.carouselCard:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.carouselNumberContainer{
+    position: absolute;
+    left: -20px;
+}
+
+.carouselNumberContainer span{
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 0.125rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size: 5rem;
+    display: inline-block;
+    height: 1em;
+    position: relative;
+    font-weight: 900;
+    height:100%;
+    bottom:-8rem;
+}
+
+.carouselImageContainer{
+    width: 100%;
+    height: 85%;
+}
+
+.carouselImageContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.planCard, .reasonCard{
+    height: 38vh;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem 1rem;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.372);
+
+}
+
+.planCard1{
+    background: linear-gradient(149deg, #1C4072 6.96%, #172B47 40.17%, #120c1f 73.39%);
+}
+
+.planCard2{
+    background: linear-gradient(149deg, #1D529D 6.96%, #233371 40.17%, #120c1f 73.39%);
+}
+
+.planCard3{
+    background: linear-gradient(149deg, #792A95 6.96%, #38216C 40.17%, #120c1f 73.39%);
+}
+
+.planCard4{
+    background: linear-gradient(149deg, #922556 6.96%, #391945 40.17%, #120c1f 73.39%);
+}
+
+.planCard h2{
+    margin-left: 0;
+    font-size: 1.5rem;
+}
+
+.planCard h4{
+    font-size: 1.3rem;
+}
+
+.planCard p{
+    font-size: 1rem;
+}
+
+.reasonCard{
+    border: none;
+    height: 33vh;
+}
+
+.reasonCard1{
+    background: linear-gradient(149deg, #022e6d 6.96%, #011a3c 40.17%, #02000c 73.39%);
+}
+
+.reasonCard2{
+    background: linear-gradient(149deg, #0f0167 6.96%, #190238 40.17%, #04000a 73.39%);
+}
+.reasonCard3{
+    background: linear-gradient(149deg, #27026c 6.96%, #240149 40.17%, #04000c 73.39%);
+}
+.reasonCard4{
+    background: linear-gradient(149deg, #35024c 6.96%, #25013c 40.17%, #0a000f 73.39%);
+}
+
+.reasonCard h2{
+    font-size: 1.5rem;
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding-top: 45px;
+}
+
+.reasonCard p{
+    font-size: 0.9rem;
+}
+
+.reasonCardLowerContent{
+    display: flex;
+    justify-content: end;
+}
+
+.reasonCardLowerContent svg{
+    height: 50px;
+    width: 50px;
+}
+
+.faqSection {
+  max-width: 100%;
+  margin: 40px auto;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.faqSection h2{
+    padding-top: 45px;
+    font-size: 1.5rem;
+}
+
+.faqCardsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.faqCard {
+  border-top: 1px solid #444;
+  overflow: hidden;
+}
+
+.faqQuestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #303030;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.faqQuestion:hover {
+  background-color: #444;
+}
+
+.faqQuestionSpan {
+  font-size: 28px;
+  transition: transform 0.3s;
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #303030;
+  padding: 0 20px;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+input[type="checkbox"]:checked ~ .faqAnswer {
+  max-height: 400px;
+  padding: 20px;
+}
+
+input[type="checkbox"]:checked + .faqQuestion .faqQuestionSpan {
+  content: "×";
+  transform: rotate(45deg);
+}
+
+.faqAnswer p {
+  margin: 0;
+}
+
+.getstartedsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.getstartedsection p{
+    font-size: 0.9rem;
+    font-family: Arial;
+    margin: 12px;
+    color: white;
+    padding: 5px;    
+}
